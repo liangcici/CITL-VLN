@@ -1,0 +1,8 @@
+torch
+torchvision
+stanfordnlp
+nlpaug
+pandas
+nltk
+transformers
+networkx
