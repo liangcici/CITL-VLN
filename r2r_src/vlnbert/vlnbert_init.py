@@ -3,7 +3,7 @@ import sys
 sys.path.append('/home/')
 sys.path.append('../')
 import os
-from transformers.pytorch_transformers import (BertConfig, BertTokenizer)
+from pytorch_transformers import (BertConfig, BertTokenizer)
 from param import args
 
 def get_tokenizer(args):
@@ -38,9 +38,7 @@ def get_vlnbert_models(args, config=None):
         from vlnbert.vlnbert_PREVALENT import VLNBert
         model_class = VLNBert
         model_name_or_path = os.path.join(args.data_dir, 'Prevalent/pretrained_model/pytorch_model.bin')
-        # vis_config = config_class.from_pretrained('bert-base-uncased')
-        vis_config = config_class.from_pretrained(os.path.join(args.data_dir,
-                                                               'Prevalent/pretrained_model/bert-base-uncased-config.json'))
+        vis_config = config_class.from_pretrained('bert-base-uncased')
         vis_config.img_feature_dim = 2176
         vis_config.img_feature_type = ""
         vis_config.vl_layers = 4

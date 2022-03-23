@@ -6,3 +6,7 @@ pandas
 nltk
 transformers
 networkx
+ijson
+h5py
+pytorch-transformers==1.0.0
+tensorboardX

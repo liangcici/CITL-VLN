@@ -7,7 +7,9 @@ This is the code for the [CITL](https://arxiv.org/abs/2112.04138) paper.
     ```
     pip install -r requirements.txt
     ```
+   
 2. Install [Matterport3D simulator](https://github.com/peteanderson80/Matterport3DSimulator). Notice that this code uses the [old version (v0.1)](https://github.com/peteanderson80/Matterport3DSimulator/tree/v0.1) of the simulator.
+
 3. Download resources in the interactive Python interpreter:
     ```
     import stanfordnlp
@@ -19,6 +21,7 @@ This is the code for the [CITL](https://arxiv.org/abs/2112.04138) paper.
 
 ## Data Preparation
 1. Follow [Recurrent VLN-BERT](https://github.com/YicongHong/Recurrent-VLN-BERT#recurrent-vln-bert) to download data.
+
 2. Generate sub-instructions, positive instructions and sub-optimal trajectories:
     ```
    sh scripts/generate_augment_data.sh
@@ -29,7 +32,8 @@ This is the code for the [CITL](https://arxiv.org/abs/2112.04138) paper.
     ```
     bash scripts/train_agent.bash
     ```
-    It takes several days (~4 days) to train on a single GPU.
+    It takes several days (~5 days) to train on a single GPU.
+    
 - Testing
     ```
     bash scripts/test_agent.bash

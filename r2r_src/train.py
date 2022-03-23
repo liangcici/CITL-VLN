@@ -8,7 +8,7 @@ import random
 import numpy as np
 from collections import defaultdict
 
-from utils import read_vocab, write_vocab, build_vocab, padding_idx, timeSince, read_img_features, print_progress, get_sync_dir
+from utils import read_vocab, write_vocab, build_vocab, padding_idx, timeSince, read_img_features, print_progress
 import utils
 from env import R2RBatch
 from agent import Seq2SeqAgent

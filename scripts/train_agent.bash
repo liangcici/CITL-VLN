@@ -24,7 +24,7 @@ flag="--vlnbert prevalent
 
       --test_only 0
 
-      --train listener
+      --train auglistener
 
       --features places365
       --maxAction 15
@@ -41,4 +41,4 @@ flag="--vlnbert prevalent
       --dropout 0.5"
 
 mkdir -p snap/$name
-python3.6 r2r_src/train.py $flag --name $name
+CUDA_VISIBLE_DEVICES=0 python r2r_src/train.py $flag --name $name

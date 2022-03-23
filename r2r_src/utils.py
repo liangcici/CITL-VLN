@@ -16,7 +16,6 @@ import numpy as np
 import networkx as nx
 from param import args
 from numpy.linalg import norm
-from polyaxon_client.tracking import get_data_paths
 
 
 # padding, unknown word, end of sentence
